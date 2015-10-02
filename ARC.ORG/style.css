@@ -1,0 +1,286 @@
+body {
+background: #0099CC;
+}
+
+td
+{
+	color: #FFFFFF;
+	font-weight: normal;
+	font-family: verdana;
+}
+
+h1, h2, h3, h4, h5 {
+
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.DynamicMenuItemStyle
+{
+    border-width: 1px;
+    border-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom-style: solid;
+}
+
+.DonationFormSubmitButton
+{
+	margin-top: 15px;
+}
+
+.DonationFormCancelButton
+{
+	margin-left: 15px;
+}
+
+.DonationIconText
+{
+    font-size: 14px;    
+}
+
+.DonationIconWrap
+{
+    float: right;
+    margin: 4px;
+}
+
+.BlogDiv
+{
+	width: 300px;
+	border: 2px solid white;
+	text-align: justify;
+	padding: 4px;
+}
+
+.BlogTitle
+{
+	font-size: 18px;
+}
+
+.DynamicMenuItem
+{
+    border-width: 1px;
+    border-color: #FFFFFF;
+    z-index: 200;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+h1 
+{
+    font-size: 35px;
+}
+
+h2 
+{
+    text-align: center;
+}
+
+h3
+{
+    font-size: 14px;
+}
+
+.calendar_title
+{
+	background-color: #6A6A6A;
+	font-family: Verdana;
+	font-size: larger;
+	font-style: normal;
+	color: #000000;
+	font-weight: bold;
+}
+
+.span_font_h3
+{
+	font-size: 14px;
+	color: #ffb400;
+}
+
+.staff
+{
+	font-size: 14px;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+.staff_link
+{
+	font-size: 14px;
+	margin: 0px;
+	text-decoration: underline;
+	color: #ffb400;
+}
+
+
+
+/*a {
+
+font: normal 11px Tahoma, Arial;
+color: #FFFFFF;
+text-decoration: underline;
+}*/
+
+/*a:hover {
+
+font: normal 11px Tahoma, Arial;
+color: #FFFFFF;
+text-decoration: none;
+
+}*/
+
+/*a.white-link-underline {	
+	text-decoration: underline;
+	color: #FFFFFF;
+}*/
+
+.white-text{
+color: #ffffff;
+text-decoration: none;
+
+}
+
+/*a.b1
+{
+font:  14px tahoma, Arial;
+color: #fffea0;
+text-decoration: none;
+padding: 15px;
+margin: 0px;
+
+}*/
+
+.p
+{
+padding: 0 0 0 20px;
+}
+.p1
+{
+padding: 0 0 0 30px;
+}
+.p2
+{
+padding: 150px 0 0 250px;
+}
+.bg1
+{
+background: #2f4c7c url(images/index_11.gif) top  repeat-x;
+}
+.bg2
+{
+background: #000000 url(images/index_10.gif) top no-repeat;
+}
+.bord
+{
+border: 2px solid #12628a;
+}
+.bord2
+{
+	border: 2px solid #FFFFFF;
+	text-align: left;
+}
+.menu 
+{
+color:#8c247b;
+vertical-align:top;
+height: 35px;
+padding: 10px 0 0 20px;
+}
+.menu a
+{
+color:#8c247b;
+font: bold 11px  tahoma, Arial;
+text-decoration: none;
+}
+
+
+.blye-text-underline {
+color: #a257e0;
+text-decoration: underline;
+}
+
+.blye-text-regular {
+color: #a257e0;
+text-decoration: none;
+}
+
+.yellow-text-regular {
+color: #ffb400;
+text-decoration: none;
+}
+
+.yellow-text-underline {
+color: #ffb400;
+text-decoration: underline;
+}
+
+.orange-text-regular {
+color: #fe6b1d;
+text-decoration: none;
+}
+
+.orange-text-underline {
+color: #fe6b1d;
+text-decoration: underline;
+}
+.broun-text-regular {
+color: #de4e06;
+text-decoration: none;
+}
+
+.broun-text-underline {
+color: #de4e06;
+text-decoration: underline;
+}
+
+.red-text-regular {
+color: #8c247b;
+text-decoration: none;
+}
+
+.red-text-underline {
+color: #8c247b;
+text-decoration: underline;
+}
+.black-text-regular {
+color: #000000;
+text-decoration: none;
+}
+
+.black-text-underline {
+color: #000000;
+text-decoration: underline;
+}
+
+
+.gray-text-underline{
+color: #7c7c7c;
+text-decoration: underline;
+}
+.gray-text-regular{
+color: #7c7c7c;
+text-decoration: none;
+}
+
+.green-text{
+color: #a5b66e;
+text-decoration: none;
+}
+
+.green-text-underline{
+color: #a5b66e;
+text-decoration: underline;
+}
+
+.MsoFooter
+{
+}
+
+
+/*  Recurring Dates  */
+.Recur_Main_Div { width: 350px; border: 2px solid black; padding: 10px; }
+.Recur_Table {}
+.Recur_Td { padding: 0px; }
+.Recur_CheckBox { margin-left: 15px; }

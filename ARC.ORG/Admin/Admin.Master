@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ARC.ORG.Admin.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title></title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="/arc_gh.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="33" style="background-image: url('/images/index_01.gif')">
+                        <table width="100%" border="0" cellspacing="5" cellpadding="0">
+                      <tr>
+                        <td class="p" width="50%">
+                            <table width="100%" border="0" cellspacing="5" cellpadding="0">
+                              <tr>
+                              </tr>
+                            </table>
+                       </td>
+                        <td width="50%" align="center">Today's date is <asp:Literal ID="Literal1" runat="server"></asp:Literal></td>
+                      </tr>
+                    </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <img src="/images/ARC_Long_Logo.jpg" width="1000" height="199" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <MY:ActiveMenu runat="server" ID="ActiveMenu1" ></MY:ActiveMenu>                        
+                    </td>
+                  </tr>
+                </table>
+                </td>
+              </tr>
+            </table>
+            
+            <div>
+                <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="bg1">
+                            <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                <tr>
+                                    <td valign="top">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="75" style="background-image: url('/images/index_25.gif')">
+                    <p align="center" class="MsoFooter" style="margin:0in;margin-bottom:.0001pt;text-align:center">
+                        <b style="mso-bidi-font-weight:normal"><span style="color:#fe6b1d">120 West First Street*Aberdeen WA 98520</span></b></p>
+                    <p align="center" class="MsoFooter" style="margin:0in;margin-bottom:.0001pt;text-align:center">
+                        <b style="mso-bidi-font-weight:normal"><span style="color:#FFFFFF">Phone: 
+                        360-537-7000 * Toll Free: 1-866-537-7272 * Fax: 360-537-8816</span></b></p>
+                    <p align="center" class="MsoFooter" style="margin:0in;margin-bottom:.0001pt;text-align:center">
+                        <b style="mso-bidi-font-weight:normal"><span style="color:#FFFFFF">Email: 
+                        thearc@arcgh.org * Website: www.arcgh.org </span></b>
+                    </p>
+                  </td>
+              </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,314 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="ARC.ORG.Main" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <title></title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+    <form id="form1" runat="server" defaultbutton="Button1">
+        <div>
+            <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+            </asp:ToolkitScriptManager>
+            <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="33" style="background-image: url('/images/index_01.gif')">
+                    <table width="100%" border="0" cellspacing="5" cellpadding="0">
+                      <tr>
+                        <td class="p" width="50%">
+                        </td>
+                        <td width="50%" align="center">Today's date is <asp:Literal ID="Literal1" runat="server"></asp:Literal></td>
+                      </tr>
+                    </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <img src="/images/ARC_Long_Logo.jpg" width="1000" height="199" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <MY:ActiveMenu runat="server" ID="ActiveMenu1" width="1000px"></MY:ActiveMenu>
+                    </td>
+                  </tr>
+                </table>
+                </td>
+              </tr>
+            </table>
+            
+            <div>
+                <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="bg1">
+                            <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                <tr>
+                                    <td width="71%" valign="top" class="bord" height="70%">
+                                        <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                    <td width="29%" valign="top" class="bord" height="70%" rowspan="1">
+                                        <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                            <tr>
+                                                <td><h2 class="orange-text-regular">Donations!</h2></td>
+                                            </tr>
+                                            <tr>
+                                                <td style=" border-bottom: 1px solid white; padding-bottom: 3px;"><asp:ImageButton ID="ImageButton1" runat="server"  CssClass="DonationIconWrap" Height="100px" ImageUrl="~/images/truck.jpg" Width="100px" PostBackUrl="~/Donation.aspx" />
+                                                    <p class="DonationIconText">Click the button to request a pickup of your clothing, or small household items!</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="5" cellpadding="0">
+                                                        <tr>
+                                                            <td width="92%">
+                                                                <h2>eNewsletter</h2>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p">
+                                                    <p><strong><asp:Literal ID="Literal6" runat="server"></asp:Literal></strong></p>
+                                                    <p style="margin-left: 15px"><asp:Literal ID="Literal7" runat="server"></asp:Literal><asp:Literal ID="Literal10" runat="server" Visible="False"></asp:Literal></p>
+                                                    <p align="right"><asp:LinkButton ID="LinkButton1" runat="server" 
+                                                            CssClass="yellow-text-underline" Font-Bold="True" onclick="LinkButton1_Click">• read more</asp:LinkButton></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style=" padding: 0px 0px 3px 20px; border-bottom: 1px solid white;">
+                                                    <p><strong><asp:Literal ID="Literal8" runat="server"></asp:Literal></strong></p>
+                                                    <p style="margin-left: 15px"><asp:Literal ID="Literal9" runat="server"></asp:Literal><asp:Literal ID="Literal11" runat="server" Visible="False"></asp:Literal></p>
+                                                    <p align="right"><asp:LinkButton ID="LinkButton6" runat="server" 
+                                                            CssClass="yellow-text-underline" Font-Bold="True" onclick="LinkButton6_Click">• read more</asp:LinkButton></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table border="0" cellspacing="10" cellpadding="0" class="bord2">
+                                                        <tr>
+                                                                    <td>
+                                                                        <table width="100%" border="0" cellspacing="5" cellpadding="0">
+                                                                            <tr>
+                                                                                <td width="92%">
+                                                                                    <h2 class="orange-text-regular">Sign Up!</h2>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <h3>Sign Up for our eNewsletter:</h3>
+                                                                <br />
+                                                                <h5>Type your email address and click okay:</h5>
+                                                                <br />                                                                
+                                                                <asp:TextBox runat="server" 
+                                                                    ToolTip="Type your email address here, and click OK." ID="TextBox1"></asp:TextBox>
+                                                                <asp:Button runat="server" Text="OK" Height="24" ID="Button1" 
+                                                                    onclick="Unnamed2_Click" />
+                                                                <br />
+                                                                <br />
+                                                                To Un-Subscribe <asp:HyperLink ID="HyperLink1" runat="server" 
+                                                                    CssClass="yellow-text-underline" NavigateUrl="~/unsubscribe.aspx">click here</asp:HyperLink>.
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">                                                    
+                                                    <!-- Facebook Badge START -->
+                                                    <a href="http://www.facebook.com/pages/The-Arc-of-Grays-Harbor/140300235985061" target="_TOP" style="font-family:'lucida grande',tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="The Arc of Grays Harbor">The Arc of Grays Harbor</a>
+                                                    <br/>
+                                                    <a href="http://www.facebook.com/pages/The-Arc-of-Grays-Harbor/140300235985061" target="_TOP" title="The Arc of Grays Harbor">
+                                                    <img src="http://badge.facebook.com/badge/140300235985061.1901.536297995.png" width="120" height="250" style="border: 0px;" alt='""' /></a>
+                                                    <br/>
+                                                    <a href="http://www.facebook.com/business/dashboard/" target="_TOP" style="font-family:'lucida grande',tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" title="Make your own badge!">Promote Your Page Too</a>
+                                                    <!-- Facebook Badge END -->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="71%" valign="top" class="bord">
+                                        <table width="100%" border="0" cellspacing="10" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="5" cellpadding="0">
+                                                        <tr>                                                            
+                                                            <td width="98%"><h2>Recent Pictures <span style="padding-left: 15px">
+                                                                <a href="PictureGallery.aspx" class="span_font_h3">View Our Picture Gallery Here!</a></span></h2></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td width="33%">
+                                                                <asp:Image ID="Image1" runat="server" />
+                                                            </td>
+                                                            <td width="33%">
+                                                                <asp:Image ID="Image2" runat="server" />
+                                                            </td>
+                                                            <td width="33%">
+                                                                <asp:Image ID="Image3" runat="server" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="29%" valign="top" class="bord" height="10%" style="padding-bottom: 5px; padding-top: 0px;">
+                                        <table border="0" cellspacing="10" cellpadding="0">
+                                            <tr>
+                                               <td>
+                                                    <table width="100%" border="0" cellspacing="5" cellpadding="0">
+                                                       <tr>
+                                                          <td width="92%">
+                                                             <h2>Events</h2>
+                                                          </td>
+                                                       </tr>
+                                                    </table>
+                                               </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p">
+                                                    <p><asp:Literal ID="Literal2" runat="server"></asp:Literal></p>
+                                                    <p style="padding-left: 10px">
+                                                        <asp:LinkButton ID="LinkButton2" runat="server" 
+                                                            CssClass="yellow-text-underline" onclick="LinkButton2_Click">LinkButton2</asp:LinkButton></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p">
+                                                    <p><asp:Literal ID="Literal3" runat="server"></asp:Literal></p>
+                                                    <p style="padding-left: 10px"><asp:LinkButton ID="LinkButton3" runat="server" 
+                                                            CssClass="yellow-text-underline" onclick="LinkButton3_Click">LinkButton3</asp:LinkButton></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p">
+                                                    <p><asp:Literal ID="Literal4" runat="server"></asp:Literal></p>
+                                                    <p style="padding-left: 10px">
+                                                        <asp:LinkButton ID="LinkButton4" runat="server" 
+                                                            CssClass="yellow-text-underline" onclick="LinkButton4_Click">LinkButton4</asp:LinkButton></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p">
+                                                    <p><asp:Literal ID="Literal5" runat="server"></asp:Literal></p>
+                                                    <p style="padding-left: 10px">
+                                                        <asp:LinkButton ID="LinkButton5" runat="server" 
+                                                            CssClass="yellow-text-underline" onclick="LinkButton5_Click">LinkButton5</asp:LinkButton></p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="75" style="background-image: url('/images/index_25.gif')">
+                    <p align="center" class="MsoFooter" style="margin:0in;margin-bottom:.0001pt;text-align:center">
+                        <b style="font-weight:normal"><span style="color:#fe6b1d">120 West First Street*Aberdeen WA 98520</span></b></p>
+                    <p align="center" class="MsoFooter" style="margin:0in;margin-bottom:.0001pt;text-align:center">
+                        <b style="font-weight:normal"><span style="color:#FFFFFF">Phone: 
+                        360-537-7000 * Toll Free: 1-866-537-7272 * Fax: 360-537-8816</span></b></p>
+                    <p align="center" class="MsoFooter" style="margin:0in;margin-bottom:.0001pt;text-align:center">
+                        <b style="font-weight:normal"><span style="color:#FFFFFF">Email: 
+                        thearc@arcgh.org * Website: www.arcgh.org </span></b>
+                    </p>
+                    <p align="center">
+                        <asp:Label ID="HitCounter" runat="server" Text="" Font-Names="Verdana" 
+                            Font-Size="Small" ForeColor="#6E6E6E"></asp:Label>
+                    </p>
+                  </td>
+              </tr>
+            </table>
+        </div>
+        <asp:AccessDataSource 
+                            ID="AccessDataSource1" runat="server" ConflictDetection="CompareAllValues" 
+                            DataFile="~/App_Data/ARC_ORG_DB.mdb" 
+                            DeleteCommand="DELETE FROM [Email] WHERE [ID] = ? AND (([Email_Address] = ?) OR ([Email_Address] IS NULL AND ? IS NULL))" 
+                            InsertCommand="INSERT INTO [Email] ([Email_Address]) VALUES (?)" 
+                            OldValuesParameterFormatString="original_{0}" 
+                            SelectCommand="SELECT * FROM [Email]" 
+                            UpdateCommand="UPDATE [Email] SET [Email_Address] = ? WHERE [ID] = ? AND (([Email_Address] = ?) OR ([Email_Address] IS NULL AND ? IS NULL))">
+                            <DeleteParameters>
+                                <asp:Parameter Name="original_ID" Type="Int32" />
+                                <asp:Parameter Name="original_Email_Address" Type="String" />
+                            </DeleteParameters>
+                            <UpdateParameters>
+                                <asp:Parameter Name="Email_Address" Type="String" />
+                                <asp:Parameter Name="original_ID" Type="Int32" />
+                                <asp:Parameter Name="original_Email_Address" Type="String" />
+                            </UpdateParameters>
+                            <InsertParameters>
+                                <asp:ControlParameter ControlID="TextBox1" Name="Email_Address" 
+                                    PropertyName="Text" Type="String" />
+                            </InsertParameters>
+                        </asp:AccessDataSource>
+        <asp:AccessDataSource ID="AccessDataSource2" runat="server" 
+            DataFile="~/App_Data/ARC_ORG_DB.mdb" 
+            DeleteCommand="DELETE FROM [Recent_Pictures] WHERE [ID] = ?" 
+            InsertCommand="INSERT INTO [Recent_Pictures] ([ID], [Image_Name], [Image_Path]) VALUES (?, ?, ?)" 
+            SelectCommand="SELECT * FROM [Recent_Pictures]" 
+            UpdateCommand="UPDATE [Recent_Pictures] SET [Image_Name] = ?, [Image_Path] = ? WHERE [ID] = ?">
+            <DeleteParameters>
+                <asp:Parameter Name="ID" Type="Int32" />
+            </DeleteParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="Image_Name" Type="String" />
+                <asp:Parameter Name="Image_Path" Type="String" />
+                <asp:Parameter Name="ID" Type="Int32" />
+            </UpdateParameters>
+            <InsertParameters>
+                <asp:Parameter Name="ID" Type="Int32" />
+                <asp:Parameter Name="Image_Name" Type="String" />
+                <asp:Parameter Name="Image_Path" Type="String" />
+            </InsertParameters>
+        </asp:AccessDataSource>
+        <asp:SlideShowExtender ID="SlideShowExtender1" runat="server" 
+            AutoPlay="True" 
+            Loop="True" 
+            SlideShowServiceMethod="GetRecentSlides" 
+            TargetControlID="Image1" 
+            SlideShowServicePath="GetPicFiles.asmx">
+        </asp:SlideShowExtender> 
+        <asp:SlideShowExtender ID="SlideShowExtender2" runat="server" 
+            AutoPlay="True" 
+            Enabled="True" 
+            Loop="True" 
+            SlideShowServiceMethod="GetRecentSlides" 
+            SlideShowServicePath="GetPicFiles.asmx" 
+            TargetControlID="Image2">
+        </asp:SlideShowExtender>
+        <asp:SlideShowExtender ID="SlideShowExtender3" runat="server" 
+            AutoPlay="True" 
+            Enabled="True" 
+            Loop="True" 
+            SlideShowServiceMethod="GetRecentSlides" 
+            SlideShowServicePath="GetPicFiles.asmx" 
+            TargetControlID="Image3">
+        </asp:SlideShowExtender>
+    </form>
+</body>
+</html>
